@@ -1,25 +1,57 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import designer_avartar from './assets/images/designer_avatar.png';
+import photo from './assets/images/photo.png';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+        <header>
+          <div className="logo">
+            <div className="logo-container">
+              <div className="image-container">
+                <img src={designer_avartar}/></div>
+              <div className="logo-label">
+                <span className="name">Lewis</span>
+                <span className="name">Nathaniel</span>
+                <span className="title">UI & Ux Designer</span>
+              </div>
+            </div>
+          </div>
+          <nav className="navigation">
+            <ul>
+              <li><a href="#">Work</a></li>
+              <li><a href="#">About Me</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+            <a className="hireMe" href="#">Hire Me</a>
+          </nav>
         </header>
+        <section className="profile">
+          <div className="profile-left">
+            <div className="intro">
+              <span className="hello">Hello I'm</span>
+              <span className="name">Cuong Nguyen</span>
+              <span className="title">Software Engineer</span>
+            </div>
+            <div className="socialButton">
+              <ul>
+                <li><a href="#" className="facebook">facebook</a></li>
+                <li><a href="#" className="google">google</a></li>
+              </ul>
+            </div>
+            <div className="callToAction">
+              <a className="hireMe" href="#">Hire Me</a>
+              <a className="seeMyResume" href="#">See My Resume</a>
+            </div>
+          </div>
+          <div className="profile-right">
+            <div className="image-container">
+              <img src={photo}/>
+            </div>
+          </div>
+        </section>
       </div>
     );
   }
