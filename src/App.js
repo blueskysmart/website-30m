@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import designer_avartar from './assets/images/designer_avatar.png';
-import photo from './assets/images/photo.png';
+import photo1 from './assets/images/photo1.png';
 
 class App extends Component {
   render() {
@@ -25,7 +25,7 @@ class App extends Component {
               <li><a href="#">Blog</a></li>
               <li><a href="#">Contact</a></li>
             </ul>
-            <a className="hireMe" href="#">Hire Me</a>
+            <a className="button button-white" href="#">Hire Me</a>
           </nav>
         </header>
         <section className="profile">
@@ -41,14 +41,14 @@ class App extends Component {
                 <li><a href="#" className="google">google</a></li>
               </ul>
             </div>
-            <div className="callToAction">
-              <a className="hireMe" href="#">Hire Me</a>
-              <a className="seeMyResume" href="#">See My Resume</a>
+            <div className="cta">
+              <a className="button button-black" href="#">Hire Me</a>
+              <a className="button button-gray" href="#">See My Resume</a>
             </div>
           </div>
           <div className="profile-right">
             <div className="image-container">
-              <img src={photo}/>
+              <img src={photo1}/>
             </div>
           </div>
         </section>

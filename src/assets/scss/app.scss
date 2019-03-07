@@ -1,18 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+$black: #000000;
+$white: #FFFFFF;
+$gray: #6A696B;
+
 html {
-  //font-size: 50px;
+  font-family: Montserrat, sans-serif;
 }
 
 .logo-label span {
   display: block;
 }
-.logo .name {
-  font-weight: bold;
-  font-size: 1rem;
-}
 
-.logo .title {
-  font-size: 0.7rem;
-  opacity: 0.7;
+.logo {
+  .name {
+    font-weight: bold;
+    font-size: 1rem;
+  }
+
+  .title {
+    font-size: 0.7rem;
+    opacity: 0.7;
+  }
 }
 
 .image-container {
@@ -27,13 +35,14 @@ html {
 ul {
   padding-left: 0;
   display: flex;
-}
-ul li {
-  list-style-type: none;
-  //padding: 0 1rem;
-  margin: 0 1rem;
-  font-weight: bold;
-  font-size: 0.875rem;
+
+  li {
+    list-style-type: none;
+    //padding: 0 1rem;
+    margin: 0 1rem;
+    font-weight: bold;
+    font-size: 0.875rem;
+  }
 }
 
 .navigation ul li a {
@@ -41,13 +50,25 @@ ul li {
   color: black;
 }
 
-.hireMe {
-  color: #000000;
+.button {
   text-decoration: none;
   padding: 0.5rem 1.5rem;
-  border: #000000 1px solid;
+  border: $black 1px solid;
   border-radius: 1rem;
-  display: block;
+}
+
+.button-white {
+  color: $black;
+}
+
+.button-black {
+  color: $white;
+  background: $black;
+}
+
+.button-gray {
+  color: $gray;
+  border-color: $gray;
 }
 
 .navigation {
@@ -65,11 +86,6 @@ header {
   justify-content: space-between;
 }
 
-.profile {
-  display: flex;
-  justify-content: space-between;
-}
-
 .intro span {
   display: block;
 }
@@ -79,16 +95,27 @@ header {
   font-weight: lighter;
 }
 
-.profile .name {
-  font-size: 45px;
-  font-weight: bold;
+.profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .name {
+    font-size: 45px;
+    font-weight: bold;
+  }
+
+  .title {
+    font-size: 18px;
+    opacity: 0.7;
+  }
+
+  ul li {
+    margin: 0 0.5rem 0 0;
+  }
 }
 
-.profile .title {
-  font-size: 18px;
-  opacity: 0.7;
+.cta .button-gray {
+  margin-left: 1rem;
 }
 
-.profile ul li {
-  margin: 0 0.5rem 0 0;
-}
