@@ -26,6 +26,9 @@ html {
 
 .image-container {
   display: inline-block;
+  img {
+    width: 850px;
+  }
 }
 
 .logo-label {
@@ -171,4 +174,5 @@ header {
 
 .project-content {
   padding: 10px 8px;
+  border: #6a696b 1px solid;
 }
