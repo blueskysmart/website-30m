@@ -25,9 +25,10 @@ class App extends Component {
               <li><a href="#">Blog</a></li>
               <li><a href="#">Contact</a></li>
             </ul>
-            <a className="button button-white" href="#">Hire Me</a>
+            <a className="button-white" href="#">Hire Me</a>
           </nav>
         </header>
+
         <section className="profile">
           <div className="profile-left">
             <div className="intro">
@@ -42,14 +43,81 @@ class App extends Component {
               </ul>
             </div>
             <div className="cta">
-              <a className="button button-black" href="#">Hire Me</a>
-              <a className="button button-gray" href="#">See My Resume</a>
+              <a className="button-black" href="#">Hire Me</a>
+              <a className="button-gray" href="#">See My Resume</a>
             </div>
           </div>
           <div className="profile-right">
             <div className="image-container">
               <img src={photo1}/>
             </div>
+          </div>
+        </section>
+
+        <section className="porfolio">
+          <div className="category-container">
+            <ul className="categories">
+              <li className="category">All</li>
+              <li className="category">App</li>
+              <li className="category">Website</li>
+              <li className="category">Interaction</li>
+            </ul>
+          </div>
+          <div className="project-container">
+            <ul className="project-list">
+              <li className="project-item">
+                <div className="project-image"></div>
+                <div className="project-content">
+                  <span className="project-category">Category</span>
+                  <div className="project-summary">
+                    <span className="project-title">Title</span>
+                    <span className="project-year">2018</span>
+                  </div>
+                </div>
+              </li>
+              <li className="project-item">
+                <div className="project-image"></div>
+                <div className="project-content">
+                  <span className="project-category">Category</span>
+                  <div className="project-summary">
+                    <span className="project-title">Title</span>
+                    <span className="project-year">2018</span>
+                  </div>
+                </div>
+              </li>
+              <li className="project-item">
+                <div className="project-image"></div>
+                <div className="project-content">
+                  <span className="project-category">Category</span>
+                  <div className="project-summary">
+                    <span className="project-title">Title</span>
+                    <span className="project-year">2018</span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <ul className="project-list">
+              <li className="project-item">
+                <div className="project-image"></div>
+                <div className="project-content">
+                  <span className="project-category">Category</span>
+                  <div className="project-summary">
+                    <span className="project-title">Title</span>
+                    <span className="project-year">2018</span>
+                  </div>
+                </div>
+              </li>
+              <li className="project-item">
+                <div className="project-image"></div>
+                <div className="project-content">
+                  <span className="project-category">Category</span>
+                  <div className="project-summary">
+                    <span className="project-title">Title</span>
+                    <span className="project-year">2018</span>
+                  </div>
+                </div>
+              </li>
+            </ul>
           </div>
         </section>
       </div>
