@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import designer_avartar from './assets/images/designer_avatar.png';
 import photo1 from './assets/images/photo1.png';
+import photo2 from './assets/images/photo2.png';
 
 class App extends Component {
   render() {
@@ -117,6 +118,50 @@ class App extends Component {
                   </div>
                 </div>
               </li>
+            </ul>
+          </div>
+          <div className="button-container">
+            <a className="button-bold" href="#">Load More Work</a>
+          </div>
+        </section>
+
+        
+        
+        <section className="about-me">
+          <div className="left">
+            <div className="image-container">
+              <img src={photo2}/>
+            </div>
+          </div>
+          <div className="right">
+            <div className="text-container">
+              <span className="text-aboutme">About Me</span>
+              <span className="text-whoami">Who Am I</span>
+            </div>
+            <div className="description">
+              <p className="text-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat est consequat eu. Quisque aliquet a ipsum nec tincidunt. Nulla vitae rhoncus leo. Praesent dui sapien, bibendum quis tempus dictum, auctor ac dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec at mauris porta, ullamcorper sem quis, lobortis sem. Donec sit amet aliquet dui, at varius est. Phasellus porttitor finibus neque vel vehicula. Duis in nulla egestas, dignissim elit at, imperdiet eros. Integer tristique posuere purus. Suspendisse placerat, quam vitae ullamcorper sollicitudin, dui ligula molestie massa, sit amet laoreet nibh ex vitae dui. Aenean laoreet pellentesque lacus, eget varius massa mattis quis. Nunc ultrices urna eu nunc lobortis pulvinar. Duis viverra, quam non imperdiet scelerisque, urna nunc consequat velit, in mollis erat nibh in libero.</p>
+            </div>
+            <div className="cta">
+              <a className="button-black" href="#">Hire Me</a>
+              <a className="button-gray" href="#">See My Resume</a>
+            </div>
+          </div>
+        </section>
+
+        <section className="quote">
+          <div className="sentence">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat est consequat eu. Quisque aliquet a ipsum nec tincidunt. Nulla vitae rhoncus leo. Praesent dui sapien, bibendum quis tempus dictum.</p>
+          </div>
+          <div className="avatar">
+            <div className="image-container">
+              <img src={designer_avartar}/>
+            </div>
+            <span className="full-name">Edward M. Brooks</span>
+            <span className="title">Marketing House</span>
+            <ul className="rate">
+              <li>star</li>
+              <li>star</li>
+              <li>star</li>
             </ul>
           </div>
         </section>
