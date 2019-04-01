@@ -3,6 +3,8 @@ import designer_avartar from './assets/images/designer_avatar.png';
 import photo1 from './assets/images/photo1.png';
 import photo2 from './assets/images/photo2.png';
 import background from './assets/images/background.png';
+import fb from './assets/images/fb.svg';
+import gg from './assets/images/gg.png';
 
 class App extends Component {
   render() {
@@ -38,7 +40,7 @@ class App extends Component {
               <span className="name">Cuong Nguyen</span>
               <span className="title">Software Engineer</span>
             </div>
-            <div className="socialButton">
+            <div className="social-button">
               <ul>
                 <li><a href="#" className="facebook">facebook</a></li>
                 <li><a href="#" className="google">google</a></li>
@@ -126,8 +128,6 @@ class App extends Component {
           </div>
         </section>
 
-
-
         <section className="about-me">
           <div className="left">
             <div className="image-container">
@@ -197,7 +197,7 @@ class App extends Component {
                   <span className="summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat.</span>
                 </div>
                 <div children="read-more">
-                  <a className="button-gray" href="#">See My Resume</a>
+                  <a className="button-gray" href="#">Read More</a>
                 </div>
               </li>
               <li className="paper-item">
@@ -211,7 +211,7 @@ class App extends Component {
                   <span className="summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat.</span>
                 </div>
                 <div children="read-more">
-                  <a className="button-gray" href="#">See My Resume</a>
+                  <a className="button-gray" href="#">Read More</a>
                 </div>
               </li>
               <li className="paper-item">
@@ -225,12 +225,33 @@ class App extends Component {
                   <span className="summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat.</span>
                 </div>
                 <div children="read-more">
-                  <a className="button-gray" href="#">See My Resume</a>
+                  <a className="button-gray" href="#">Read More</a>
                 </div>
               </li>
             </ul>
           </div>
         </section>
+
+        <footer className="footer">
+          <div className="left">
+            <div className="copy-right">© 2018 UI43 - Free Templates</div>
+            <div className="social-button">
+              <ul>
+                <li><a href="#" className="facebook"><img src={fb}/></a></li>
+                <li><a href="#" className="google"><img src={gg}/></a></li>
+              </ul>
+            </div>
+          </div>
+          <nav className="navigation">
+            <ul>
+              <li><a href="#">Work</a></li>
+              <li><a href="#">About Me</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+            <a className="button-white" href="#">Hire Me</a>
+          </nav>
+        </footer>
       </div>
     );
   }
