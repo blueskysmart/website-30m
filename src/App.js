@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import designer_avartar from './assets/images/designer_avatar.png';
 import photo1 from './assets/images/photo1.png';
 import photo2 from './assets/images/photo2.png';
+import background from './assets/images/background.png';
 
 class App extends Component {
   render() {
@@ -11,7 +12,7 @@ class App extends Component {
           <div className="logo">
             <div className="logo-container">
               <div className="image-container">
-                <img src={designer_avartar}/></div>
+                <img src={designer_avartar} /></div>
               <div className="logo-label">
                 <span className="name">Lewis</span>
                 <span className="name">Nathaniel</span>
@@ -50,7 +51,7 @@ class App extends Component {
           </div>
           <div className="profile-right">
             <div className="image-container">
-              <img src={photo1}/>
+              <img src={photo1} />
             </div>
           </div>
         </section>
@@ -125,12 +126,12 @@ class App extends Component {
           </div>
         </section>
 
-        
-        
+
+
         <section className="about-me">
           <div className="left">
             <div className="image-container">
-              <img src={photo2}/>
+              <img src={photo2} />
             </div>
           </div>
           <div className="right">
@@ -149,19 +150,84 @@ class App extends Component {
         </section>
 
         <section className="quote">
-          <div className="sentence">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat est consequat eu. Quisque aliquet a ipsum nec tincidunt. Nulla vitae rhoncus leo. Praesent dui sapien, bibendum quis tempus dictum.</p>
+          <div className="sentence-background">
+            <div className="image-background">
+              <img src={background} />
+            </div>
+            <div className="sentence">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat est consequat eu. Quisque aliquet a ipsum nec tincidunt. Nulla vitae rhoncus leo. Praesent dui sapien, bibendum quis tempus dictum.</p>
+            </div>
           </div>
           <div className="avatar">
             <div className="image-container">
-              <img src={designer_avartar}/>
+              <img src={designer_avartar} />
             </div>
             <span className="full-name">Edward M. Brooks</span>
             <span className="title">Marketing House</span>
-            <ul className="rate">
-              <li>star</li>
-              <li>star</li>
-              <li>star</li>
+            <div className="rate-container">
+              <ul className="rate">
+                <li>star</li>
+                <li>star</li>
+                <li>star</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section className="read-me">
+          <div className="text-container">
+            <span className="title">Read Me</span>
+            <span className="sentence">Sometimes I write something smart</span>
+          </div>
+          <div className="paper-container">
+            <ul className="paper-list">
+              <li className="paper-item">
+                <div className="item-overview">
+                  <div className="date">
+                    <div className="date-text">
+                      <span className="day">10</span>
+                      <span className="month">June</span>
+                    </div>
+                  </div>
+                  <div className="overview"></div>
+                </div>
+                <div className="item-summary">
+                  <span className="title">Ten The BestApp In 2017</span>
+                  <span className="category">Category</span>
+                  <span className="summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat.</span>
+                </div>
+                <div children="read-more">
+                  <a className="button-gray" href="#">See My Resume</a>
+                </div>
+              </li>
+              <li className="paper-item">
+                <div className="item-overview">
+                  <div className="date"></div>
+                  <div className="overview"></div>
+                </div>
+                <div className="item-summary">
+                  <span className="title">Ten The BestApp In 2017</span>
+                  <span className="category">Category</span>
+                  <span className="summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat.</span>
+                </div>
+                <div children="read-more">
+                  <a className="button-gray" href="#">See My Resume</a>
+                </div>
+              </li>
+              <li className="paper-item">
+                <div className="item-overview">
+                  <div className="date"></div>
+                  <div className="overview"></div>
+                </div>
+                <div className="item-summary">
+                  <span className="title">Ten The BestApp In 2017</span>
+                  <span className="category">Category</span>
+                  <span className="summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat.</span>
+                </div>
+                <div children="read-more">
+                  <a className="button-gray" href="#">See My Resume</a>
+                </div>
+              </li>
             </ul>
           </div>
         </section>
