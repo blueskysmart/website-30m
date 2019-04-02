@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import designer_avartar from './assets/images/designer_avatar.png';
-import photo1 from './assets/images/photo1.png';
 import photo2 from './assets/images/photo2.png';
 import background from './assets/images/background.png';
 import fb from './assets/images/fb.svg';
@@ -53,7 +52,7 @@ class App extends Component {
           </div>
           <div className="profile-right">
             <div className="image-container">
-              <img src={photo1} />
+              {/* <img src={photo1} /> */}
             </div>
           </div>
         </section>
